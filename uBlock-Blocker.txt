@@ -1,0 +1,89 @@
+! What lands on the list:
+! #########################################################################################################################################
+! # - Cookie Consent Banner (if they can be blocked and don't inhibit the use of the page)																								#
+! # - Annoying recommendation features, e.g Youtube wants to serve you a "Youtube featured" video totally unrelated to your interests			#
+! # - Some ad-like banners or features not catched by ublock																																							#
+! #########################################################################################################################################
+
+! =======================================================================================================================================================
+! # Booking
+! # https://secure.booking.com
+! ###################################
+! 07.12.2024 https://secure.booking.com
+secure.booking.com##.bui-alert--error.bui-u-bleed\@small.bui-alert
+
+! =======================================================================================================================================================
+! # DigitalOcean
+! # https://www.digitalocean.com
+! ###################################
+
+! 22.09.2024 https://www.digitalocean.com
+www.digitalocean.com##div.kUgdbU.TopBarCTAstyles__StyledTopBarCTA-sc-dwifql-0 > .fLGgpV.Typographystyles-sc-o7qsl9-0 > .gxPNxu.LinkTextstyles-sc-jz3jcd-0
+www.digitalocean.com##.hzqmXE.TopBarCTAstyles__StyledTopBarCTA-sc-dwifql-0 > .fLGgpV.Typographystyles-sc-o7qsl9-0 > .gxPNxu.LinkTextstyles-sc-jz3jcd-0
+
+! =======================================================================================================================================================
+! # Download Time
+! # https://www.download-time.com
+! ###################################
+! 27.07.2024 https://www.download-time.com
+www.download-time.com##.cc-color-override-688238583.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window
+
+! =======================================================================================================================================================
+! # Gute-Küche
+! # https://www.kicktipp.de
+! ###################################
+! https://www.gutekueche.at
+! 2023-12-07, Looks for: Cookie Consent Banner
+||cdn.privacy-mgmt.com/index.html?message_id=953888&consentUUID=a83ebc42-c430-4adb-9ecb-fa957a9c2055&preload_message=true&hasCsp=true&version=v1&consent_origin=https%3A%2F%2Fcdn.privacy-mgmt.com%2Fconsent%2Ftcfv2&mms_origin=https%3A%2F%2Fcdn.privacy-mgmt.com%2Fmms%2Fv2$subdocument
+
+! =======================================================================================================================================================
+! # Kick-Tipp
+! # https://www.kicktipp.de
+! ###################################
+! 13.06.2024 https://www.kicktipp.de
+||www.kicktipp.de/assets/oddset-240x130.168060fb.png$image
+www.kicktipp.de##.wettbanner-left
+www.kicktipp.de##.wettbanner-right
+
+! =======================================================================================================================================================
+! # Samsung
+! # https://semiconductor.samsung.com
+! ###################################
+! 21.12.2024 https://semiconductor.samsung.com
+semiconductor.samsung.com##.hide.before-animation
+semiconductor.samsung.com##.before > button
+
+! =======================================================================================================================================================
+! # Thomas-Krenn
+! # https://www.thomas-krenn.com
+! ###################################
+! 04.08.2024, Looks for: Cookie Consent Banner
+www.thomas-krenn.com###xtxNavigationOffCookiePolicy > div
+www.thomas-krenn.com##.xtxNavigationOffCanvasOverlayCookie.initialized.xtxNavigationOffCanvas.xtxNavigation
+
+! =======================================================================================================================================================
+! # YOUTUBE
+! https://www.youtube.com
+! ###################################
+! 08.09.2024, Looks for: ???
+www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
+
+! 15.10.2024, Looks for: ???
+www.youtube.com###mealbar-promo-renderer > .yt-mealbar-promo-renderer.style-scope
+
+! 20.10.2025 https://www.youtube.com
+www.youtube.com##.ytd-watch-flexy.style-scope > .ytd-expandable-metadata-renderer.style-scope
+
+! 24.10.2025 Looks for: Unknown
+! (UNKNOWN PURPOSE) www.youtube.com##.ytDownloadListItemViewModelHost > .yt-list-item-view-model > .yt-list-item-view-model__container--in-popup.yt-list-item-view-model__container--tappable.yt-list-item-view-model__container--compact.yt-list-item-view-model__container.yt-list-item-view-model__label
+
+! 21.11.2025, Looks for: Badge = YouTube Members Only
+www.youtube.com###related :is(yt-lockup-view-model, ytd-compact-video-renderer):has([d^="M6 .5a5.5 5.5 0 100 11"])
+
+! TT.MM.YYYY, Looks for: Badge = Auto-Dubbed
+www.youtube.com###related :is(yt-lockup-view-model, ytd-compact-video-renderer):has([d^="M19.4.2a1 1 0 00"])
+
+! 22.02.2026, Looks for: Badge = Youtube-featured
+www.youtube.com###related :is(yt-lockup-view-model, ytd-compact-video-renderer):has(yt-badge-view-model badge-shape)
+
+
