@@ -2,6 +2,7 @@
 ! Expires: 1 day
 ! Description: Personally created list of small annoyances on websites
 ! Homepage: https://github.com/Appoxo/Ad-List
+! Alphabetical Order: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
 ! What lands on the list:
 ! #########################################################################################################################################
@@ -32,6 +33,16 @@ www.digitalocean.com##.hzqmXE.TopBarCTAstyles__StyledTopBarCTA-sc-dwifql-0 > .fL
 ! ###################################
 ! 27.07.2024 https://www.download-time.com
 www.download-time.com##.cc-color-override-688238583.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window
+
+! =======================================================================================================================================================
+! # Fandom
+! https://www.fandom.com/
+! ###################################
+! # 2026-04-27, https://kalleankasverige.fandom.com
+kalleankasverige.fandom.com##.AgeGateDialog-module_overlay__aPtu5.Modal_overlay__7pQwi
+kalleankasverige.fandom.com##.AgeGateDialog-module_dialog__uZt4G
+! # Wildcard: 
+fandom.com##.AgeGateDialog-module_dialog__uZt4G
 
 ! =======================================================================================================================================================
 ! # Gute-Küche
