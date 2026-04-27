@@ -11,34 +11,54 @@
 ! # - Some ad-like banners or features not catched by ublock																																							#
 ! #########################################################################################################################################
 
+!# Template: (exclude this line)
+! =======================================================================================================================================================
+! # Example.org (TLD-Domain. geo-specific pages like amazon.de and amazon.com that have (likely) similar rules are to be collected under the general brand)
+! ###################################
+! # URLs:
+! YYYY-MM-DD, https://www.example.org, Looks for: Cookie-Banner
+www.example.org ###cos-banner
+
+! # URLs:
+! YYYY-MM-DD, https://www.example.com, Looks for: Cookie-Banner
+www.example.com ###cos-banner
+
+
+! =======================================================================================================================================================
+! # Amazon
+! ###################################
+! # URLs:
+! 2026-04-27, https://www.amazon.de, Looks for: Cookie Banner
+www.amazon.de###cos-banner
+
 ! =======================================================================================================================================================
 ! # Booking
-! # https://secure.booking.com
 ! ###################################
-! 07.12.2024 https://secure.booking.com
+! # URLs:
+! 2024-12-07 https://secure.booking.com
 secure.booking.com##.bui-alert--error.bui-u-bleed\@small.bui-alert
 
 ! =======================================================================================================================================================
 ! # DigitalOcean
-! # https://www.digitalocean.com
 ! ###################################
-
-! 22.09.2024 https://www.digitalocean.com
+! # URLs:
+! 2024-09-22, https://www.digitalocean.com
 www.digitalocean.com##div.kUgdbU.TopBarCTAstyles__StyledTopBarCTA-sc-dwifql-0 > .fLGgpV.Typographystyles-sc-o7qsl9-0 > .gxPNxu.LinkTextstyles-sc-jz3jcd-0
 www.digitalocean.com##.hzqmXE.TopBarCTAstyles__StyledTopBarCTA-sc-dwifql-0 > .fLGgpV.Typographystyles-sc-o7qsl9-0 > .gxPNxu.LinkTextstyles-sc-jz3jcd-0
 
 ! =======================================================================================================================================================
 ! # Download Time
-! # https://www.download-time.com
 ! ###################################
+! # URLs:
 ! 27.07.2024 https://www.download-time.com
 www.download-time.com##.cc-color-override-688238583.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window
 
 ! =======================================================================================================================================================
 ! # Fandom
-! https://www.fandom.com/
 ! ###################################
+! # URLs:
 ! # 2026-04-27, https://kalleankasverige.fandom.com
+! # 2026-04-27, https://*.fandom.com
 kalleankasverige.fandom.com##.AgeGateDialog-module_overlay__aPtu5.Modal_overlay__7pQwi
 kalleankasverige.fandom.com##.AgeGateDialog-module_dialog__uZt4G
 ! # Wildcard: 
@@ -46,16 +66,15 @@ fandom.com##.AgeGateDialog-module_dialog__uZt4G
 
 ! =======================================================================================================================================================
 ! # Gute-Küche
-! # https://www.kicktipp.de
 ! ###################################
-! https://www.gutekueche.at
+! # URLs:
 ! 2023-12-07, Looks for: Cookie Consent Banner
 ||cdn.privacy-mgmt.com/index.html?message_id=953888&consentUUID=a83ebc42-c430-4adb-9ecb-fa957a9c2055&preload_message=true&hasCsp=true&version=v1&consent_origin=https%3A%2F%2Fcdn.privacy-mgmt.com%2Fconsent%2Ftcfv2&mms_origin=https%3A%2F%2Fcdn.privacy-mgmt.com%2Fmms%2Fv2$subdocument
 
 ! =======================================================================================================================================================
 ! # Kick-Tipp
-! # https://www.kicktipp.de
 ! ###################################
+! # URLs:
 ! 13.06.2024 https://www.kicktipp.de
 ||www.kicktipp.de/assets/oddset-240x130.168060fb.png$image
 www.kicktipp.de##.wettbanner-left
@@ -63,25 +82,25 @@ www.kicktipp.de##.wettbanner-right
 
 ! =======================================================================================================================================================
 ! # Samsung
-! # https://semiconductor.samsung.com
 ! ###################################
+! # URLs:
 ! 21.12.2024 https://semiconductor.samsung.com
 semiconductor.samsung.com##.hide.before-animation
 semiconductor.samsung.com##.before > button
 
 ! =======================================================================================================================================================
 ! # Thomas-Krenn
-! # https://www.thomas-krenn.com
 ! ###################################
-! 04.08.2024, Looks for: Cookie Consent Banner
+! # URLs:
+! 04.08.2024, https://www.thomas-krenn.com, Looks for: Cookie Consent Banner
 www.thomas-krenn.com###xtxNavigationOffCookiePolicy > div
 www.thomas-krenn.com##.xtxNavigationOffCanvasOverlayCookie.initialized.xtxNavigationOffCanvas.xtxNavigation
 
 ! =======================================================================================================================================================
 ! # YOUTUBE
-! https://www.youtube.com
 ! ###################################
-! 08.09.2024, Looks for: ???
+! # URLs:
+! 08.09.2024, https://www.youtube.com, Looks for: ???
 www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
 
 ! 15.10.2024, Looks for: ???
