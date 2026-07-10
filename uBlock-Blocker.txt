@@ -81,6 +81,15 @@ www.kicktipp.de##.wettbanner-left
 www.kicktipp.de##.wettbanner-right
 
 ! =======================================================================================================================================================
+! # Reddit
+! ###################################
+! # URLs:
+! 10.07.2026 https://www.reddit.com, In-Comments promotion posts disguised as comments
+reddit.com##shreddit-dynamic-ad-link
+! 10.07.2026 https://www.reddit.com, In-feed promotion posts disguised as user content
+reddit.com##shreddit-dynamic-ad-link#shreddit-ad-post
+
+! =======================================================================================================================================================
 ! # Samsung
 ! ###################################
 ! # URLs:
