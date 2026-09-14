@@ -8,7 +8,7 @@ A service is eligble to be added if it can block something and improves the priv
 |Filename|Purpose/service|What's on it|
 |-|-|-|
 |`eternalIPBlocklist.txt`|OPNsense IP blocklist|IPs/endpoints that do portscanning|  
-|`hosts.txt`|pihole blocklist|Usually annoying ads or things I don't trust like novel TLDs (e.g. `.zip` that could be used maliciously|
+|`hosts.txt`|pihole blocklist|Usually annoying ads or things I (personally) don't trust like novel TLDs (e.g. `.zip`) that could be used maliciously|
 |`uBlock-Blocker.txt`|uBlock Origin list|Annoying cookie banners or ads that prevent me from using the site|
 
 ## How to get on this list  
