@@ -341,8 +341,8 @@
 ||eos-gateway-ingress-prod.befa.live.use1a.on.epicgames.com^
 
 ! Anmeldetoken, SDKabgleich, Telemetrie, Matchmaking und nochmal als Websocket präsent
+!! Notes: Whitelist as needed
 ||api.epicgames.dev^
-@@||api.epicgames.dev^
 
 !! Epic Games - 3rd Party
 ||datarouter-svc-prod06-public-49221551.us-east-1.elb.amazonaws.com^
@@ -653,12 +653,8 @@
 ||stun-1-nat.ol.epicgames.com^
 ||stun-2-nat.ol.epicgames.com^
 !! steamcontent.com
-! Overridden by the allow rule for the same domain
-||ipv6check-http.steamcontent.com^
-! Overrides the block rule for the same domain (hosts.txt)
-@@||ipv6check-http.steamcontent.com^
-||ipv6check-udp.steamcontent.com^
-!! Hosting
+
+!! Satisfactory - 3rd Party
 ||ec2-100-25-206-154.compute-1.amazonaws.com^
 ||ec2-3-121-217-224.eu-central-1.compute.amazonaws.com^
 ||ec2-3-123-128-174.eu-central-1.compute.amazonaws.com^
@@ -673,6 +669,14 @@
 ||hull.sgaas.net^
 !! Hosting
 ||sgaas-vpc-garry-public-elb-644092612.eu-west-1.elb.amazonaws.com^
+
+! =====================================================
+! Valve Corp - Steam
+
+!! Steam - Connectivity Checks
+!! Reason: No reason to deem it malicious.
+@@||ipv6check-http.steamcontent.com^
+@@||ipv6check-udp.steamcontent.com^
 
 ! =====================================================
 ! Split.io
@@ -730,6 +734,7 @@
 ||api.uca.cloud.unity3d.com^
 ||config.uca.cloud.unity3d.com^
 ||cdp.cloud.unity3d.com^
+||hwstats.uca.cloud.unity3d.com
 
 !! Unity - IAPs
 ||iap.unity3d.com^
