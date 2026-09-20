@@ -1,0 +1,805 @@
+[Adblock Plus 2.0]
+! Title: Personal DNS blocklist
+! Description: A blocklist for technitium. Style is ABP compliant
+! Last modified: yyyy-mm-dd
+!
+! =====================================================
+! Cheatsheet for alphabetical order
+! A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+! =====================================================
+!
+! ===== TLD list =====
+! Potentially malicious TLDs 
+!! TLDs with common file extensions (why are those even a thing? Who approved this nonsense?)
+||mov^
+||zip^
+!
+!
+! ===== Domain list =====
+! ##### The Big ones #####
+! Note: Entries in here are usually the big multi-national corporations like FAANG
+
+! Adobe
+||airdownload2.adobe.com^
+!! Adobe - 3rd Party
+||a92-122-200-118.deploy.static.akamaitechnologies.com^
+||e4578.dscb.akamaiedge.net^
+
+! =============================
+
+! Amazon
+!! Amazon - AWS
+!!! AWS - Firehose
+||firehose.ap-northeast-1.amazonaws.com^
+||firehose.ap-southeast-2.amazonaws.com^
+||firehose.eu-central-1.amazonaws.com^
+||firehose.us-east-1.amazonaws.com^
+
+!!! AWS - Kinesis
+||kinesis.ap-northeast-1.amazonaws.com^
+||kinesis.us-east-1.amazonaws.com^
+||kinesis.us-west-2.amazonaws.com^
+
+!!! AWS - Redshift
+||redshift.us-east-1.amazonaws.com^
+||redshift.us-gov-west-1.amazonaws.com^
+||redshift.us-west-2.amazonaws.com^
+
+! =============================
+
+! Meta
+!! Meta - Facebook
+!! Reasoning: Fuck Meta
+||facebook.com^
+||connect.facebook.net^
+||graph.facebook.com^
+||staticxx.facebook.com^
+
+!!! Meta - Ads
+!! atdmt.com
+||ad.atdmt.com^
+||cx.atdmt.com^
+||view.atdmt.com^
+||xx-fbcdn-shv-01-prg1.fbcdn.net^
+
+! =============================
+
+! Alphabet
+!! Alphabet - Google
+@@||g.co^
+@@||goo.gl^
+@@||google.de^
+
+!!! Google - Ads, analytics and telemetry services
+||googleads.g.doubleclick.net^
+||stats.g.doubleclick.net^
+||stats.l.doubleclick.net^
+||ssl.google-analytics.com^
+||www.google-analytics.com^
+||script.google.com^
+||www-google-analytics.l.google.com^
+||googlevideo.com^
+||r1---sn-8xgn5uxa-4g5e.googlevideo.com^
+||r7---sn-8xgn5uxa-4g5e.googlevideo.com^
+||r1---sn-8xgn5uxa-4g5l.gvt1.com^
+||r2---sn-8xgn5uxa-4g5l.gvt1.com^
+@@||manifest.googlevideo.com^
+@@||redirector.googlevideo.com^
+
+!!! Google - Firebase/Firestore
+@@||firestore.googleapis.com^
+@@||crashlyticsreports-pa.googleapis.com^
+
+!!! Google - User generated content like Google Workspaces (or most likely belonging to it)
+@@||script.googleusercontent.com^
+
+!!! Google - Android/Chrome connectivity
+@@||android.clients.google.com^
+@@||clients1.google.com^
+@@||clients2.google.com^
+@@||clients3.google.com^
+@@||clients4.google.com^
+@@||clients5.google.com^
+@@||clients6.google.com^
+@@||dl.google.com^
+
+!!! Google - AndroidTV
+||androidtvchannels-pa.googleapis.com^
+||androidtvlauncherxfe-pa.googleapis.com^
+||androidtvwatsonfe-pa.googleapis.com^
+
+!! Google - YouTube
+@@||youtu.be^
+@@||s.youtube.com^
+@@||s2.youtube.com^
+@@||www.youtube.com^
+@@||i.ytimg.com^
+@@||i1.ytimg.com^
+@@||s.ytimg.com^
+@@||youtubei.googleapis.com^
+@@||yt3.ggpht.com^
+@@||youtube-nocookie.com^
+@@||www.youtube-nocookie.com^
+
+!! Alphabet - Ungrouped
+@@||reminders-pa.googleapis.com^
+
+! =============================
+
+! Microsoft
+! Microsoft - Authentication
+@@||clientconfig.passport.net^
+@@||login.live.com^
+@@||login.microsoftonline.com^
+@@||nexusrules.officeapps.live.com^
+
+! Microsoft - Office Suite
+@@||nexus.officeapps.live.com^
+@@||officeclient.microsoft.com^
+@@||outlook.office365.com^
+@@||products.office.com^
+@@||client-s.gateway.messenger.live.com^
+
+! Microsoft - Windows 
+!!! Windows updates, Store and connectivity check
+@@||ctldl.windowsupdate.com^
+@@||displaycatalog.mp.microsoft.com^
+@@||dl.delivery.mp.microsoft.com^
+@@||geo-prod.do.dsp.mp.microsoft.com^
+@@||msftncsi.com^
+@@||ipv6.msftncsi.com^
+@@||www.msftncsi.com^
+
+! Windows/Microsoft telemetry, config and CDN
+@@||settings-win.data.microsoft.com^
+@@||v10.events.data.microsoft.com^
+@@||v20.events.data.microsoft.com^
+@@||v10.vortex-win.data.microsoft.com^
+@@||fp.msedge.net^
+@@||c.s-microsoft.com^
+@@||i.s-microsoft.com^
+
+! Microsoft - VScode and Github
+||devtunnels.ms^
+||tunnels.api.visualstudio.com^
+@@||githubapp.com^
+
+! Microsoft - Game backends (for player login and accounts)
+!! Notes: Might be used for ad and behavior logging
+||27d9.playfabapi.com^   ! Skara - The Blade Remains
+||41dc.playfabapi.com^   ! Realm Grinder
+||558c.playfabapi.com^   ! Sunset Overdrive
+||5f03.playfabapi.com^   ! High Profits
+||9092.playfabapi.com^   ! Legion TD 2
+||ee38.playfabapi.com^   ! Halo: The Master Chief Collection
+||f3b6.playfabapi.com^   ! Rico
+
+! Microsoft - Xbox Live services
+@@||c.xbox.com^
+@@||xbox.ipv6.microsoft.com^
+@@||www.xboxlive.com^
+@@||attestation.xboxlive.com^
+@@||cert.mgt.xboxlive.com^
+@@||def-vef.xboxlive.com^
+@@||device.auth.xboxlive.com^
+@@||title.auth.xboxlive.com^
+@@||xsts.auth.xboxlive.com^
+@@||eds.xboxlive.com^
+@@||help.ui.xboxlive.com^
+@@||licensing.xboxlive.com^
+@@||notify.xboxlive.com^
+@@||title.mgt.xboxlive.com^
+@@||xkms.xboxlive.com^
+@@||xboxexperiencesprod.experimentation.xboxlive.com^
+@@||xflight.xboxlive.com^
+
+! XBOX - Halo Infinite (and maybe Halo MCC) matchmaking ping servers
+! WARNING: The configured servers will also block Halo:MCC from functioning. Disable pihole when playing Halo:MCC!
+! ||pfmsqos.australiaeast.cloudapp.azure.com^
+! ||pfmsqos.brazilsouth.cloudapp.azure.com^
+! ||pfmsqos.centralus.cloudapp.azure.com^
+! ||pfmsqos.eastasia.cloudapp.azure.com^
+! ||pfmsqos.eastus.cloudapp.azure.com^
+! ||pfmsqos.eastus2.cloudapp.azure.com^
+! ||pfmsqos.japaneast.cloudapp.azure.com^
+! ||pfmsqos.japanwest.cloudapp.azure.com^
+! ||pfmsqos.northcentralus.cloudapp.azure.com^
+! ||pfmsqos.northeurope.cloudapp.azure.com^
+! ||pfmsqos.southafricanorth.cloudapp.azure.com^
+! ||pfmsqos.southcentralus.cloudapp.azure.com^
+! ||pfmsqos.southeastasia.cloudapp.azure.com^
+! ||pfmsqos.westeurope.cloudapp.azure.com^
+! ||pfmsqos.westus.cloudapp.azure.com^
+! ||pfmsqos.westus2.cloudapp.azure.com^
+
+! =====================================================
+! ! ##### Anything else #####
+! 4shared
+@@||www.4shared.com^
+
+! =====================================================
+! 505 Games
+||collect16548ghstr.deltadna.net^
+
+! =====================================================
+! Amplitude
+!! amplitude.com
+||api.amplitude.com^
+||cdn.amplitude.com^
+!! Hosting
+||ec2-52-26-54-44.us-west-2.compute.amazonaws.com^
+
+! =====================================================
+! AOL
+!! Notes: Why is that even here?
+@@||www.aol.de^
+
+! =====================================================
+! AppsFlyer
+!! AppsFlyer - Various services
+||api.appsflyer.com^
+||app.appsflyer.com^
+||events.appsflyer.com^
+||fvalid.appsflyer.com^
+||impression.appsflyer.com^
+||register.appsflyer.com^
+||stats.appsflyer.com^
+||t.appsflyer.com^
+!! AppsFlyer - 3rd Party
+||a2-16-186-73.deploy.static.akamaitechnologies.com^
+||ec2-63-32-163-181.eu-west-1.compute.amazonaws.com^
+
+! =====================================================
+! ARD
+@@||image.ard.de^
+
+! =====================================================
+! Avalanche Studios | Fatalist Development AB
+||cotw-assets.thehunter.com^
+||conf.avalanchestudios.com^
+||crashreporter.avalanchestudios.com^
+||genzero-social.avalanchestudios.com^
+||thp-social.avalanchestudios.com^
+||users.avalanchestudios.com^
+
+!! Avalanche Studios - Telemetry
+||metrics.avalanchestudios.com^
+||oldtracking.avalanchestudios.com^
+||tracking.avalanchestudios.com^
+||tracking2.avalanchestudios.com^
+
+! =====================================================
+! Blizzard Entertainment Inc.
+||bs.serving-sys.com^
+||cm.g.doubleclick.net^
+||col.eum-appdynamics.com^
+
+!! Blizard - Telemetry
+||iir.blizzard.com^
+||ec2-54-77-237-127.eu-west-1.compute.amazonaws.com^
+||ec2-63-34-238-32.eu-west-1.compute.amazonaws.com^
+
+!!! Blizzard - Gaming information services
+@@||nydus.battle.net^
+
+!! Blizzard - 3rd Party
+||a72-247-153-48.deploy.static.akamaitechnologies.com^
+||bnetcmsus-a.akamaihd.net^
+||bneteu-a.akamaihd.net^
+! Hardware metrics
+
+! =====================================================
+! Buffpanel
+||cellense.com^
+||buffpanel.com^
+!! subdomains
+||api.buffpanel.com^
+
+! =====================================================
+! deltaDNA Game Analytics
+!! deltadna - Various analytical domains
+||balanced-collect.deltadna.net^
+! Teenage Mutant Ninja Turtles: Portal Power
+||collect11772tmntp.deltadna.net^
+! Tropico 6
+||collect13452trpc6.deltadna.net^
+! WWE 2K19
+||collect13623ww19v.deltadna.net^
+! Thronebreaker: The Witcher Tales
+||collect14010thrnb.deltadna.net^
+! Control: Ultimate Edition
+||collect14853cntrl.deltadna.net^
+! Governor of Poker 3
+||collect3515gvrnr.deltadna.net^
+||engage3515gvrnr.deltadna.net^
+! Arma Tactics
+||collect5588rmtct.deltadna.net^
+! Hive Jump
+||collect9543hvjmp.deltadna.net^
+
+!! deltaDNA - 3rd Party
+||148.113.96.34.bc.googleusercontent.com^
+||h31-3-232-184.host.redstation.co.uk^
+
+! =====================================================
+! Dropbox
+@@||dl.dropboxusercontent.com^
+!! dropbox.com
+@@||ns1.dropbox.com^
+@@||ns2.dropbox.com^
+
+! =====================================================
+! Epic Games Inc.
+!! epicgames.com
+||datarouter-prod.ak.epicgames.com^
+||datarouter-weighted.ol.epicgames.com^
+||datarouter.ol.epicgames.com^
+||eos-gateway-ingress-prod.befa.live.use1a.on.epicgames.com^
+
+! Anmeldetoken, SDKabgleich, Telemetrie, Matchmaking und nochmal als Websocket präsent
+||api.epicgames.dev^
+@@||api.epicgames.dev^
+
+!! Epic Games - 3rd Party
+||datarouter-svc-prod06-public-49221551.us-east-1.elb.amazonaws.com^
+||ec2-18-233-90-22.compute-1.amazonaws.com^
+||ec2-52-55-140-235.compute-1.amazonaws.com^
+
+! =====================================================
+! Flurry Analytics
+||e1.ycpi.vip.deb.yahoo.com^
+!! flurry.com
+||adlog.flurry.com^
+||ads.flurry.com^
+||cdn.flurry.com^
+||data.flurry.com^
+
+! =====================================================
+! G123
+||h5.g123.jp^
+
+! =====================================================
+! GameAnalytics
+||freegameanalytics.com^
+||skdev.io^
+||gameanalytics.com^
+||api-us.gameanalytics.com^
+||api.gameanalytics.com^
+||rubick.gameanalytics.com^
+
+!! GameAnalytics - 3rd Party
+||ec2-100-26-6-72.compute-1.amazonaws.com^
+||ec2-18-207-60-204.compute-1.amazonaws.com^
+||ec2-18-210-78-0.compute-1.amazonaws.com^
+||ec2-3-210-245-61.compute-1.amazonaws.com^
+||ec2-3-222-3-9.compute-1.amazonaws.com^
+||ec2-3-234-38-111.compute-1.amazonaws.com^
+||ec2-3-95-45-109.compute-1.amazonaws.com^
+||ec2-34-231-177-209.compute-1.amazonaws.com^
+||ec2-52-206-64-136.compute-1.amazonaws.com^
+||ec2-52-207-101-166.compute-1.amazonaws.com^
+||ec2-52-44-63-167.compute-1.amazonaws.com^
+||ec2-52-86-71-202.compute-1.amazonaws.com^
+||ec2-54-164-133-21.compute-1.amazonaws.com^
+||ec2-54-165-16-168.compute-1.amazonaws.com^
+||ec2-54-227-196-34.compute-1.amazonaws.com^
+||live-collect-blue-lb-184443518.us-east-1.elb.amazonaws.com^
+
+! =====================================================
+! Gamesight
+!! gamesight.io
+||api.ingest.marketing.gamesight.io^
+||console.gamesight.io^
+||track-api.gamesight.io^
+
+! =====================================================
+! HPE
+@@||smetrics.hpe.com^
+
+! =====================================================
+! HubSpot
+||forms.hsforms.com^
+
+! =====================================================
+! Humble Bundle
+||sptrack.mailer.humblebundle.com^
+
+! =====================================================
+! ironSource
+! Logdateien
+||logs.supersonic.com^
+!! ssacdn.com
+||networksdk.ssacdn.com^
+||static.ssacdn.com^
+||v.ssacdn.com^
+||www.ssacdn.com^
+!! supersonicads.com
+||click-haproxy.supersonicads.com^
+! Sdk
+||init.supersonicads.com^
+! Callbacks
+||is-gateway.supersonicads.com^
+! Mediation
+||outcome-ssp.supersonicads.com^
+||outcome.supersonicads.com^
+||ow-gateway.supersonicads.com^
+||pixel-tracking.sonic-us.supersonicads.com^
+||pm-gateway.supersonicads.com^
+||rv-gateway.supersonicads.com^
+!! Hosting
+||a104-124-11-24.deploy.static.akamaitechnologies.com^
+||a23-210-252-239.deploy.static.akamaitechnologies.com^
+||ec2-52-20-131-127.compute-1.amazonaws.com^
+||ec2-52-20-219-15.compute-1.amazonaws.com^
+||ec2-52-20-60-144.compute-1.amazonaws.com^
+||server-13-224-196-108.fra2.r.cloudfront.net^
+||server-13-224-198-245.fra2.r.cloudfront.net^
+||server-13-225-78-15.fra2.r.cloudfront.net^
+||server-13-225-78-6.fra2.r.cloudfront.net^
+||server-13-225-78-7.fra2.r.cloudfront.net^
+||server-143-204-101-81.fra50.r.cloudfront.net^
+||server-54-240-168-74.ams54.r.cloudfront.net^
+||supersonicads-a.akamaihd.net^
+
+! =====================================================
+! Kaspersky
+||ksn-file-geo.kaspersky-labs.com^
+
+! =====================================================
+! Klei Entertainment
+!! Klei - Telemetry
+||perf-events.cloud.unity3d.com^
+||ds.metrics.klei.com^
+||dst.metrics.klei.com^
+||jwt.metrics.klei.com^
+||ni.metrics.klei.com^
+||oni.metrics.klei.com^
+||jwtcollector.kleientertainment.com^
+||metric.kleientertainment.com^
+
+!! Klei - 3rd Party
+||ec2-34-211-23-135.us-west-2.compute.amazonaws.com^
+||ec2-34-231-207-192.compute-1.amazonaws.com^
+||ec2-34-236-69-189.compute-1.amazonaws.com^
+||ec2-52-201-125-219.compute-1.amazonaws.com^
+||ec2-52-6-54-1.compute-1.amazonaws.com^
+||kleianalyticsfrontend.elasticbeanstalk.com^
+
+! =====================================================
+! LG Electronics
+! Most entries found via https://www.reversewhois.io/ -> LG Electronics Inc
+||cn-laundry.com^
+||colorsteamtromm.com^
+||dios-builtin.biz^
+||diosbuiltin.biz^
+||hems-editech.com^
+||internal-lgthinq.com^
+||lg-chat.net^
+||lg-chatbot.com^
+||lg-chatbot.net^
+||lg-ess.com^
+||lg-thinqhome.com^
+||lg1544.com^
+||lg4h.com^
+||lg7777.com^
+||lgaccount.com^
+||lgappstv.com^
+||lgbest-on.com^
+||lgchannelsplus.com^
+||lgchat.net^
+||lgchatbot.net^
+||lgchiller.com^
+||lgcpm.com^
+||lgcreateboard.com^
+||lgdonghang.com^
+||lge-mental.com^
+||lge.co.kr^
+||lge.so^
+||lgeapi.com^
+||lgechat.com^
+||lgechat.net^
+||lgecloud.com^
+||lgeexchange.net^
+||lgeir.com^
+||lgepartner.com^
+||lgesalespartner.com^
+||lgewith.com^
+||lglime.com^
+||lgmagnaept.com^
+||lgmobile.com^
+||lgoledcare.com^
+||lgpartnerclub.com^
+||lgprocentric.com^
+||lgsktinitial.com^
+||lgsmartplatform.com^
+||lgstyler.com^
+||lgsupport.info^
+||lgsvl.com^
+||lgthinq.com^
+||lgthinqhome.com^
+||lgtvcommon.com^
+||lgtviot.com^
+||lgtvsdp.com^
+||signaturekitchensuite.com^
+||steamtromm.com^
+||webosapollo.org^
+||webosce.org^
+||weboscollective.org^
+||webosoe.org^
+||webospublic.org^
+||whisen.biz^
+||wiselg.com^
+||xn--jp2bx0q2onhia.com^
+||xn--vl2b6ir5xjxm6selma.com^
+||xn--zj4bt31b.biz^
+||xn--zj4btz1e348czxg.com^
+||xn--zj4btzg9cc8tz3g.com^
+!! lge.com
+||lge.com^
+||lgtvonline.lge.com^
+||ngfts.lge.com^
+||lgsmartad.com^
+||de.info.lgsmartad.com^
+
+! =====================================================
+! McAfee
+||mcafee.com^
+
+! =====================================================
+! Mixpanel
+!! mixpanel.com
+||api-js.mixpanel.com^
+||api.mixpanel.com^
+||decide.mixpanel.com^
+!! mxpnl.com
+||cdn.mxpnl.com^
+||cdn4.mxpnl.com^
+!! Mixpanel - 3rd Party
+||159.240.178.107.bc.googleusercontent.com^
+||23.235.186.35.bc.googleusercontent.com^
+||25.25.190.35.bc.googleusercontent.com^
+||253.25.190.35.bc.googleusercontent.com^
+||51.241.186.35.bc.googleusercontent.com^
+
+! =====================================================
+! Mozilla
+@@||getpocket.com^
+
+! =====================================================
+! mparticle.com
+||cookiesync.mparticle.com^
+||identity.mparticle.com^
+||jssdkcdns.mparticle.com^
+||jssdks.mparticle.com^
+
+! NinjaKiwi
+!! ninjakiwi.com
+||analytics.ninjakiwi.com^
+||api.ninjakiwi.com^
+||priority-static-api.nkstatic.com^
+||static-api.nkstatic.com^
+! Overrides the block rule for the same domain (hosts.txt)
+@@||static-api.nkstatic.com^
+ 
+! =====================================================
+! NVIDIA
+@@||gfwsl.geforce.com^
+
+! =====================================================
+!! optimizely.com
+||a8270235338.cdn.optimizely.com^
+||logx.optimizely.com^
+
+! =====================================================
+! Piwik
+||piwik.bayreuth.de^
+||piwik.berlinonline.de^
+||piwik.documentfoundation.org^
+||piwik.up.welt.de^
+||piwikcm03.cmcitymedia.de^
+||statistik.kdrs.de^
+
+! =====================================================
+! Pixiv
+||open-pixon.ads-pixiv.net^
+
+! =====================================================
+! Raspberry Pi
+! Converted from regex (\.|^)raspberrypi\.org$
+@@||raspberrypi.org^
+ 
+! =====================================================
+! Rayjump/Mintegral
+!! rayjump.com
+||analytics.rayjump.com^
+||cdn-adn-https.rayjump.com^
+||hybird.rayjump.com^
+||net.rayjump.com^
+||setting.rayjump.com^
+!! Hosting
+||ec2-18-185-169-11.eu-central-1.compute.amazonaws.com^
+||ec2-54-93-145-28.eu-central-1.compute.amazonaws.com^
+
+! =====================================================
+! Rockstar Games
+@@||prod.telemetry.ros.rockstargames.com^
+
+! =====================================================
+! Samsung
+!! Samsung - Samsung TV
+||acr-eu-prd.internetat.tv^
+@@||lcprd1.samsungcloudsolution.net^
+||osb.samsungqbe.com^
+||prderrordumphsm.samsungcloudsolution.com^
+||tvx.adgrx.com^
+!! Samsung - 3rd Party
+||d2s336w63pl2vv.cloudfront.net^
+
+! =====================================================
+! Satisfactory
+||api.stathat.com^
+! Ingamenews
+||ingamenews.satisfactorygame.com^
+!! epicgames.com
+||euc-1-prod.stun.euc1a.on.epicgames.com^
+||euc-2-prod.stun.euc1a.on.epicgames.com^
+||metrics.ol.epicgames.com^
+||stun-1-nat.ol.epicgames.com^
+||stun-2-nat.ol.epicgames.com^
+!! steamcontent.com
+! Overridden by the allow rule for the same domain
+||ipv6check-http.steamcontent.com^
+! Overrides the block rule for the same domain (hosts.txt)
+@@||ipv6check-http.steamcontent.com^
+||ipv6check-udp.steamcontent.com^
+!! Hosting
+||ec2-100-25-206-154.compute-1.amazonaws.com^
+||ec2-3-121-217-224.eu-central-1.compute.amazonaws.com^
+||ec2-3-123-128-174.eu-central-1.compute.amazonaws.com^
+||ec2-3-223-253-136.compute-1.amazonaws.com^
+||ec2-3-227-34-162.compute-1.amazonaws.com^
+||ec2-52-0-181-95.compute-1.amazonaws.com^
+
+! =====================================================
+! Sega Games Co., Ltd.
+!! sgaas.net
+||garry.sgaas.net^
+||hull.sgaas.net^
+!! Hosting
+||sgaas-vpc-garry-public-elb-644092612.eu-west-1.elb.amazonaws.com^
+
+! =====================================================
+! Split.io
+! Whitelist damit EA Play in der Lage ist verdammte installierte Spiele in der Bibliothek zu laden 😑
+@@||sdk.split.io^
+
+! =====================================================
+! Spotify
+!! spotify.com
+@@||apresolve.spotify.com^
+@@||spclient.wg.spotify.com^
+
+! =====================================================
+! TrackJS
+!! tjsint.net
+||prd-capture-1.tjsint.net^
+||prd-capture-2.tjsint.net^
+||prd-capture-3.tjsint.net^
+||prd-usage-1.tjsint.net^
+||prd-usage-2.tjsint.net^
+||prd-usage-3.tjsint.net^
+
+! =====================================================
+! TreasureData
+!! treasuredata.com
+||cdn.treasuredata.com^
+||cdp.in.treasuredata.com^
+||in.treasuredata.com^
+||tokyo.in.treasuredata.com^
+!! TreasureData - 3rd Party
+||ec2-34-202-72-93.compute-1.amazonaws.com^
+ 
+! =====================================================
+! Unity Technologies
+!! unity3d.com
+||ap1-prod-mm.unet.unity3d.com^
+||thind-gke-ape.prd.data.corp.unity3d.com^
+||thind-gke-euw.prd.data.corp.unity3d.com^
+||thind-gke-usc.prd.data.corp.unity3d.com^
+
+!! Unity - Ads (and Analytics)
+||sdk-diagnostics.prd.mz.internal.unity3d.com^
+||auction.unityads.unity3d.com^
+||ads-brand-postback.unityads.unity3d.com^
+||config.unityads.unity3d.com^
+||cdn-highwinds.unityads.unity3d.com^
+||cdn-webview-pge.unityads.unity3d.com^
+||httpkafka.unityads.unity3d.com^
+||pge.unityads.unity3d.com^
+||publisher-config.unityads.unity3d.com^
+||publisher-event.unityads.unity3d.com^
+||remote-config-proxy-prd.uca.cloud.unity3d.com^
+||stats.unity3d.com^
+||webview.unityads.unity3d.com^
+||api.uca.cloud.unity3d.com^
+||config.uca.cloud.unity3d.com^
+||cdp.cloud.unity3d.com^
+
+!! Unity - IAPs
+||iap.unity3d.com^
+||ecommerce.iap.unity3d.com^
+||events.iap.unity3d.com^
+
+!! Unity - Telemetry
+||tracking.prd.mz.internal.unity3d.com^
+
+!! Unity - Unknown or other
+||userreporting.cloud.unity3d.com^
+||prd-lender.cdp.internal.unity3d.com^
+
+!! Unity - 3rd Party
+||14.181.107.34.bc.googleusercontent.com^
+||150.252.227.35.bc.googleusercontent.com^
+||186.194.186.35.bc.googleusercontent.com^
+||217.76.95.34.bc.googleusercontent.com^
+||229.52.241.35.bc.googleusercontent.com^
+||234.88.190.35.bc.googleusercontent.com^
+||53.26.241.35.bc.googleusercontent.com^
+||8.78.190.35.bc.googleusercontent.com^
+||ec2-3-1-14-112.ap-southeast-1.compute.amazonaws.com^
+||ec2-52-220-179-77.ap-southeast-1.compute.amazonaws.com^
+
+! =====================================================
+! Veeam
+! Veeam shortener
+@@||go.veeam.com^
+
+! =====================================================
+! Leftover from YourOnlineChoices
+||emerse.com^
+||ipromote.com^
+||neodatagroup.com^
+||outbrain.com^
+||rakutenmarketing.com^
+||semasio.net^
+||sportradarserving.com^
+||a.sportradarserving.com^
+
+! =====================================================
+! Diverse
+||adsrvr.org^
+||advertising.com^
+||aimfar.solution.weborama.fr^
+||chartbeat.com^
+||choice.msn.com^
+||datafront.co^
+||edigitalsurvey.com^
+||me-ssl.effectivemeasure.net^
+||oath.com^
+||permutive.com^
+||scorecardresearch.com^
+||sentry.io^
+||teads.tv^
+||vtracy.de^
+||zemanta.com^
+!! adtechjp.com
+||adtechjp.com^
+||guce.adtechjp.com^
+!! bidr.io
+||bidr.io^
+||optout.prod.bidr.io^
+!! nexage.com
+||nexage.com^
+||guce.nexage.com^
+!! plista.com
+||plista.com^
+||selfservice.plista.com^
+!! revenuenetwork.com
+||revenuenetwork.com^
+||media.revenuenetwork.com^
+!! spot.im
+||spot.im^
+||ad-choices.spot.im^
+!! zdbb.net
+||zdbb.net^
+||opt-out.zdbb.net^
