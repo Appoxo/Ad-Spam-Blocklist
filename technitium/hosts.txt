@@ -155,9 +155,9 @@
 @@||www.msftncsi.com^
 
 ! Windows/Microsoft telemetry, config and CDN
+||events.data.microsoft.com^
+||azr.footprintdns.com^
 @@||settings-win.data.microsoft.com^
-@@||v10.events.data.microsoft.com^
-@@||v20.events.data.microsoft.com^
 @@||v10.vortex-win.data.microsoft.com^
 @@||fp.msedge.net^
 @@||c.s-microsoft.com^
