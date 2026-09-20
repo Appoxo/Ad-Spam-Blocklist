@@ -76,21 +76,15 @@
 ||stats.l.doubleclick.net^
 ||ssl.google-analytics.com^
 ||www.google-analytics.com^
-||script.google.com^
+
 ||www-google-analytics.l.google.com^
-||googlevideo.com^
-||r1---sn-8xgn5uxa-4g5e.googlevideo.com^
-||r7---sn-8xgn5uxa-4g5e.googlevideo.com^
-||r1---sn-8xgn5uxa-4g5l.gvt1.com^
-||r2---sn-8xgn5uxa-4g5l.gvt1.com^
-@@||manifest.googlevideo.com^
-@@||redirector.googlevideo.com^
 
 !!! Google - Firebase/Firestore
 @@||firestore.googleapis.com^
 @@||crashlyticsreports-pa.googleapis.com^
 
 !!! Google - User generated content like Google Workspaces (or most likely belonging to it)
+||script.google.com^
 @@||script.googleusercontent.com^
 
 !!! Google - Android/Chrome connectivity
@@ -120,6 +114,16 @@
 @@||yt3.ggpht.com^
 @@||youtube-nocookie.com^
 @@||www.youtube-nocookie.com^
+
+!!! Google - Video serving backend
+@@||googlevideo.com^
+@@||manifest.googlevideo.com^
+@@||redirector.googlevideo.com^
+@@||r1---sn-8xgn5uxa-4g5e.googlevideo.com^
+@@||r7---sn-8xgn5uxa-4g5e.googlevideo.com^
+@@||r1---sn-8xgn5uxa-4g5l.gvt1.com^
+@@||r2---sn-8xgn5uxa-4g5l.gvt1.com^
+
 
 !! Alphabet - Ungrouped
 @@||reminders-pa.googleapis.com^
