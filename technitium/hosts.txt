@@ -601,11 +601,11 @@
 
 ! =====================================================
 ! Pixiv
+||ads-pixiv.net^
 ||open-pixon.ads-pixiv.net^
 
 ! =====================================================
 ! Raspberry Pi
-! Converted from regex (\.|^)raspberrypi\.org$
 @@||raspberrypi.org^
  
 ! =====================================================
@@ -616,7 +616,8 @@
 ||hybird.rayjump.com^
 ||net.rayjump.com^
 ||setting.rayjump.com^
-!! Hosting
+
+!! Rayjump/Mintegral - 3rd Party
 ||ec2-18-185-169-11.eu-central-1.compute.amazonaws.com^
 ||ec2-54-93-145-28.eu-central-1.compute.amazonaws.com^
 
@@ -632,6 +633,7 @@
 ||osb.samsungqbe.com^
 ||prderrordumphsm.samsungcloudsolution.com^
 ||tvx.adgrx.com^
+
 !! Samsung - 3rd Party
 ||d2s336w63pl2vv.cloudfront.net^
 
