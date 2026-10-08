@@ -40,6 +40,8 @@
 2602:80D:1000::/44
 2620:96:E000::/48
 
+###
+
 # TAMATYA-MNT
 # Found through: ???
 # Source(s): https://app.crowdsec.net/cti/79.124.49.146
@@ -51,3 +53,8 @@
 # Source(s): https://app.crowdsec.net/cti/216.93.246.15 | https://www.whois.com/whois/216.93.246.15 
 # IPv4:
 216.93.246.15
+
+# Unknown Host. Suspicious Behavior
+# Found through: Firewall log
+# Notes: Supposedly belongs to Hetzner IP Range
+# IPv4: 65.108.247.104
